@@ -1,0 +1,37 @@
+from flask import Flask,render_template #template to render html file
+
+app = Flask(__name__)
+
+@app.route('/')
+
+def index():
+    return render_template('index.html')
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+    This is this basic template of a Flask file
+    And all the rules 
+    Create a templates folder and apply your htrm,l files init
+    base.html contains the skeletol structure of your webpage and other versions contain the other 
+    paragraphs or rlements to be changed.
+
+    use {% block head %} {% endblock %}
+    in the base to specify the location of the incoming text
+    and then in the index use the header file as
+    {% extends 'base.html' %}
+    and then use the appropriate syntax and then  write the HTML 
+    code init.
+
+    Create a Static folder which contains all the CSS filles init.
+    static > css > main.css
+    link the css file
+
+    Now as like many htmls there may be different css file for different
+    html files
+    Just like render_template we use use_for to maintain appropropriate css files.
+
+    import use_for in the header file of flask,
+    In the base.html 
+    <link rel="stylesheet"  href="{{url_for('static',filename='css/main.css')}}">
+    
