@@ -1,0 +1,62 @@
+body{
+    font-family: poppins;
+    border: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: rgb(38, 39, 48);
+}
+
+h1 {
+    color: antiquewhite;
+    font-size: 25px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;   /* horizontal centering of inner content */
+    align-items: center;       /* vertical centering of inner content */
+    background-color: rgb(25, 29, 31);
+    height: 60px;            /* give it height to see the flex effect */
+    border-radius: 35px;
+}
+
+#chats{
+    height: 75vh;
+}
+
+#chats{
+    background-color: #3a3935;
+    margin: 1em;
+    border-style: solid;
+    border-radius: 20px;
+}
+button {
+    padding: 10px 20px;
+    height: 2.5em;
+    font-size: 16px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input{
+ 
+    margin-left: 1em;
+    margin-right:1em  ;
+    height: 2.5em;
+    border-radius: 25px;
+    width: 80vw;
+    padding-left: 1em;
+}
+
+input::placeholder{
+    padding-left: 1em;
+
+}
+
+footer{
+    margin-top:20px;
+    text-align: center;
+    color: aliceblue;
+
+}
